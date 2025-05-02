@@ -1,10 +1,5 @@
-<%-- 
-    Document   : consulta
-    Created on : 2/05/2025, 10:42:37 a. m.
-    Author     : keidi
---%>
 <%@page import="java.util.List"%>
-<%@page import="com.miproyecto.modelo.Usuario"%>
+<%@page import="miproyecto.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -98,7 +93,7 @@
         
         <div class="menu">
             <a href="index.jsp">Volver a Inicio</a> | 
-            <a href="registro">Registrar Usuario</a>
+            <a href="registro.jsp">Registrar Usuario</a>
         </div>
     </div>
 </body>
