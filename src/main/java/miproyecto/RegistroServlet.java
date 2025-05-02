@@ -16,7 +16,15 @@ import java.util.List;
 
 @WebServlet(name = "RegistroServlet", urlPatterns = {"/registro"})
 public class RegistroServlet extends HttpServlet {
-   @Override
+
+    /**
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
    protected void doPost (HttpServletRequest request, HttpServletResponse response)
            throws ServletException, IOException {
        String nombre = request.getParameter("nombre");
@@ -38,7 +46,15 @@ public class RegistroServlet extends HttpServlet {
         request.setAttribute("mensaje", "!Usuario registrado con exito¡");
         request.getRequestDispatcher("/registro.jsp").forward(request,response);
    }
-        @Override
+
+    /**
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
         protected void doGet(HttpServletRequest request, HttpServletResponse response)
                 throws ServletException, IOException {
                     request.getRequestDispatcher("/registro.jsp").forward(request, response);
