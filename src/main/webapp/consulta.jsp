@@ -3,7 +3,8 @@
     Created on : 2/05/2025, 10:42:37 a. m.
     Author     : keidi
 --%>
-
+<%@page import="java.util.List"%>
+<%@page import="com.miproyecto.modelo.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
